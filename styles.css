@@ -102,9 +102,22 @@ label, input, button {
 body {
     background-color: var(--clr-blue700-background);
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--clr-white-backgroud);
+
+}
+
+.hero img {
+    width: 33rem;
 }
 
 .signup {
@@ -148,17 +161,35 @@ button:active {
     background-color: var(--clr-red-button);
 }
 
-@media screen and (min-width: 64rem) {
-    body{
+@media (min-width: 48rem) and (max-width: 63.99rem) {
+    .card {
+        padding: 2rem;
+        border-radius: 0.875rem;
+
+    }
+
+    .signup {
+        background-color: var(--clr-white-backgroud);
+        max-width: 33rem;
+    }
+
+}
+
+@media (min-width: 64rem) {
+    .card {
         flex-direction: row;
         margin: 0 auto;
         max-height: 40.063rem;
         max-width: 56.5rem;
+        padding: 1.5rem;
+        border-radius: 0.875rem;
+        gap:1.5rem
+
     }
     .hero{
         order: 2;
     }
-
-
-    
+    .signup {
+        padding: 0;
+    }
 }
