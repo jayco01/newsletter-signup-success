@@ -4,12 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>Newsletter sign-up form with success message</title>
 </head>
 <body>
 
   <!-- Sign-up form start -->
+  <picture class="hero">
+    <source srcset="assets/images/illustration-sign-up-desktop.svg" media="(min-width: 1080px)">
+    <img src="assets/images/illustration-sign-up-mobile.svg" alt="Newsletter Image">
+  </picture>
   <section class="signup">
     <h1 class="signup__heading">Stay updated!</h1>
     <p class="signup__description">Join 60,000+ product managers receiving monthly updates on:</p>
@@ -22,10 +29,6 @@
     <input class="signup__input" type="text" placeholder="email@company.com">
     <button class="signup__button button" type="button">Subscribe to monthly newsletter</button>
   </section>
-  <picture class="hero">
-    <source srcset="assets/images/illustration-sign-up-desktop.svg" media="(min-width: 1024px)">
-    <img src="assets/images/illustration-sign-up-mobile.svg" alt="Newsletter Image">
-  </picture>
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
