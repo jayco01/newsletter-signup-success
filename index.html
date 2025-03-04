@@ -3,38 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
   <title>Newsletter sign-up form with success message</title>
 </head>
 <body>
 
   <!-- Sign-up form start -->
-
-  <h1>Stay updated!</h1>
-
-  <p>Join 60,000+ product managers receiving monthly updates on:</p>
-
-  <ul>
-    <li>Product discovery and building what matters</li>
-    <li>Measuring to ensure updates are a success</li>
-    <li>And much more!</li>
-  </ul>
-
-  <label for="">Email address</label>
-  <input type="text" placeholder="email@company.com">
-  <button>Subscribe to monthly newsletter</button>
+  <section class="signup">
+    <h1 class="signup__heading">Stay updated!</h1>
+    <p class="signup__description">Join 60,000+ product managers receiving monthly updates on:</p>
+    <ul class="signup__list">
+      <li class="signup__item">Product discovery and building what matters</li>
+      <li class="signup__item">Measuring to ensure updates are a success</li>
+      <li class="signup__item">And much more!</li>
+    </ul>
+    <label class="signup__label" for="email">Email address</label>
+    <input class="signup__input" type="text" placeholder="email@company.com">
+    <button class="signup__button button" type="button">Subscribe to monthly newsletter</button>
+  </section>
+  <picture class="hero">
+    <source srcset="assets/images/illustration-sign-up-desktop.svg" media="(min-width: 1024px)">
+    <img src="assets/images/illustration-sign-up-mobile.svg" alt="Newsletter Image">
+  </picture>
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-
-  <h1>Thanks for subscribing!</h1>
-
-  <p>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
-
-  <button>Dismiss message</button>
-
+  <section class="success">
+    <picture class="success__icon">
+      <img src="assets/images/icon-success.svg" alt="check icon">
+    </picture>
+    <h1 class="success__heading">Thanks for subscribing!</h1>
+    <p class="success__description">A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
+    <button class="success__button button" type="button">Dismiss message</button>
+  </section>
   <!-- Success message end -->
 </body>
 </html>
