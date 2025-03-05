@@ -90,12 +90,13 @@ textarea:not([rows]) {
 
 
 /* .success {
-    display: none;
+    display: none !important;
 } */
 
 .static {
-    display: none;
+    display: none !important;
 }
+
 
 h1, p, li, 
 label, input, button {
@@ -111,7 +112,7 @@ body {
     margin: 0 auto;
 }
 
-.card {
+.card,.static {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,7 +175,8 @@ button {
 
 .success__heading {
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: clamp(2.5rem,3.5rem,3.5rem);
+    text-wrap: wrap;
 }
 
 button:active {
@@ -182,10 +184,12 @@ button:active {
 }
 
 @media (min-width: 48rem) and (max-width: 63.99rem) {
+
     .card {
         padding: 2rem;
         border-radius: 0.875rem;
-
+        max-height: 878px;
+        max-width: 608px;
     }
 
     .signup {
@@ -197,27 +201,33 @@ button:active {
         max-height: 520px;
     }
 
-
-
 }
 
 @media (min-width: 64rem) {
-    .card {
-        flex-direction: row;
-        margin: 0 auto;
-        max-height: 40.063rem;
-        max-width: 56.5rem;
-        padding: 1.5rem;
-        border-radius: 0.875rem;
-        gap:1.5rem
 
+    .static {
+        display: flex;
+        flex-direction: row;
+        border-radius: 0.875rem;
+        gap: 2rem
     }
-    .hero{
+
+    .hero {
+        flex-grow: 1;
         order: 2;
     }
-    .signup {
-        padding: 0;
+
+    .card {
+        border-radius: 0.875rem;
+        max-width: 904px;
+        max-height: 641px;
+        padding: 2rem;
     }
+
+    .signup {
+        max-width: 450px;
+    }
+
 
     .success {
         max-height: 520px;
