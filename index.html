@@ -27,15 +27,18 @@
           <li class="signup__item">Measuring to ensure updates are a success</li>
           <li class="signup__item">And much more!</li>
         </ul>
-        <label class="signup__label" for="email">Email address</label>
-        <input class="signup__input" type="text" placeholder="email@company.com">
+        <div class="error">
+          <label class="signup__label" for="email">Email address</label>
+          <p class="error_message"></p>
+        </div>
+        <input id="email" class="signup__input" type="text" placeholder="email@company.com">
         <button class="signup__button button1" type="button">Subscribe to monthly newsletter</button>
       </section>
     </div>
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-    <section class="success active">
+    <section class="success hide">
       <picture class="success__icon">
         <img src="assets/images/icon-success.svg" alt="check icon">
       </picture>

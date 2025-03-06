@@ -89,11 +89,7 @@ textarea:not([rows]) {
 }
 
 
-/* .success {
-    display: none !important;
-} */
-
-.static {
+.hide {
     display: none !important;
 }
 
@@ -181,6 +177,16 @@ button {
 
 button:active {
     background-color: var(--clr-red-button);
+    transform: scale(0.98);
+}
+
+.error {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error_message {
+  color: var(--clr-red-button);
 }
 
 @media (min-width: 48rem) and (max-width: 63.99rem) {
