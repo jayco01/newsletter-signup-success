@@ -166,7 +166,7 @@ body {
 }
 
 .cotent__list li::before {
-    content: url(assets/images/icon-list.svg);
+    content: url(assets\images\newsletter-sign-up-capture.png);
 }
 
 input {
