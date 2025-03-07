@@ -13,10 +13,8 @@ btnSubmit.addEventListener("click", (e) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email validation pattern
 
     if (email === "") {
-        errorMessage.textContent = "Email address required";
         errorMessage.style.display = "block"; // Show error message
     } else if (!emailRegex.test(email)) {
-        errorMessage.textContent = "Enter a valid email address";
         errorMessage.style.display = "block"; // Show error message
     } else {
         errorMessage.textContent = ""; // Clear error message
