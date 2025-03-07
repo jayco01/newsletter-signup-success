@@ -82,7 +82,7 @@ textarea:not([rows]) {
     ==========================  */
 
 
-.success-wrapper {
+.hide {
     display: none !important;
 }
 
