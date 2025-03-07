@@ -24,10 +24,10 @@ figure, blockquote, dl, dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
+/* ul[role='list'],
 ol[role='list'] {
   list-style: none;
-}
+} */
 
 /* Set core body defaults */
 body {
@@ -160,14 +160,26 @@ body {
     padding: 0;
 }
 
-.cotent__list li{
+.cotent__list {
+    list-style-image:url(icon-list.svg);
+    list-style-position: inside;
+    
+    /* list-style: inside; */
+}
+
+
+/* .cotent__list li {
+    padding-right: 2rem;
+} */
+
+/* .cotent__list li{
     display: grid;
     grid-template-columns: 2rem auto;
 }
 
 .cotent__list li::before {
     content: url(icon-list.svg);
-}
+} */
 
 input {
     padding: 1rem;
