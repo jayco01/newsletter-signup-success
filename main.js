@@ -15,11 +15,9 @@ btnSubmit.addEventListener("click", (e) => {
     if (email === "") {
         errorMessage.textContent = "Email address required";
         errorMessage.style.display = "block"; // Show error message
-        inputEl.style.border = "2px solid hsl(4, 100%, 67%)"; // Red border
     } else if (!emailRegex.test(email)) {
         errorMessage.textContent = "Enter a valid email address";
         errorMessage.style.display = "block"; // Show error message
-        inputEl.style.border = "2px solid hsl(4, 100%, 67%)"; // Red border
     } else {
         errorMessage.textContent = ""; // Clear error message
         errorMessage.style.display = "none";
